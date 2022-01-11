@@ -16,7 +16,7 @@ const Header = () => {
         <li>CSS</li>
         <li>JAVA SCRIPT</li>
         <li>REACT</li>
-        <li>NODA</li>
+        <li>NODE</li>
       </ul>
     </div>
   )

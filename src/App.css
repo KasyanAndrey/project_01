@@ -1,14 +1,33 @@
-.App {
-  max-width: 1280px;
-  background-color: #51f307;
+.app-wrapper {
+  display: grid;
+  width: 1280px;
   margin: 0 auto;
+  grid-template-areas:
+    "h h"
+    "n c";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
 }
 
-ul {
-  margin: 0;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+.header {
+  grid-area: h;
+  background-color: springgreen;
+}
+
+.nav {
+  grid-area: n;
+  display: grid;
+  background-color: yellow;
+}
+
+.content {
+  grid-area: c;
+  background-color: wheat;
+}
+
+.header img {
+  display: block;
+  width: 48px;
+  height: 48px;
 }

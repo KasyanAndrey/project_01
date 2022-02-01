@@ -1,10 +1,30 @@
 .header {
+  position: relative;
   grid-area: h;
-  background-color: springgreen;
+  background: linear-gradient(
+    45deg,
+    rgb(10, 4, 101),
+    rgb(0, 98, 255),
+    rgb(9, 244, 244)
+  );
+  border-radius: 2px;
+  padding: 10px 30px;
+  box-shadow: 5px 10px 20px rgba(10, 10, 10, 0.2);
+
 }
 
-.image {
-  display: block;
+.logo {
+  display: inline-block;
+  background-image: url("../../assets/img/logo.svg");
+  background-repeat: no-repeat;
   width: 48px;
   height: 48px;
+  color: #daa520;
+}
+
+span {
+  position: absolute;
+  top: 28%;
+  left: 80px;
+  text-transform: uppercase;
 }

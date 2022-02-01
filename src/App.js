@@ -8,7 +8,7 @@ import Profile from "./components/Profile/Profile.jsx";
 const App = () => {
   return (
     <div className="app-wrapper">
-      13
+      next 16
       <Header />
       <Navbar />
       <Profile />

@@ -13,11 +13,8 @@ const MyPosts = () => {
         <button>Add post</button>
       </div>
       <ul className={css.posts}>
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
+        <Post message='Hi, how are you?' grade='8'/>
+        <Post message='It is my first post!'grade='25'/>
       </ul>
     </section>
   );

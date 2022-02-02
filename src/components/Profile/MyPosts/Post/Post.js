@@ -1,17 +1,15 @@
 import React from "react";
 import css from "./Post.module.css";
 import imgAvatar from "../../../../assets/img/default_avatar.png";
-const Post = () => {
-    return (
-        <div className={css.post}>
-            <img src={imgAvatar} alt="user avatar"></img>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at
-                est sed nulla hendrerit ultricies...
-            </p>
-            <div className={css.like}>Like</div>
-        </div>
-    );
+
+const Post = (props) => {
+  return (
+    <div className={css.post}>
+      <img src={imgAvatar} alt="user avatar"></img>
+      <p>{props.message}</p>
+      <div className={css.like}>Like: {props.grade}</div>
+    </div>
+  );
 };
 
 export default Post;

@@ -4,8 +4,8 @@
   background: linear-gradient(
     45deg,
     rgb(10, 4, 101),
-    rgb(0, 98, 255),
-    rgb(9, 244, 244)
+    rgb(9, 244, 244),
+    rgb(0, 98, 255)
   );
   border-radius: 2px;
   padding: 10px 30px;

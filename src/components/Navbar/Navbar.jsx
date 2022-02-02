@@ -5,6 +5,7 @@ const Navbar = () => {
   return (
     <nav className={css.nav}>
       <a className={`${css.link} ${css.active}`} href="#s">Profile</a>
+      <a className={css.link} href="#s">Dialogs</a>
       <a className={css.link} href="#s">Messages</a>
       <a className={css.link} href="#s">News</a>
       <a className={css.link} href="#s">Music</a>

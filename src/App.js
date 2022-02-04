@@ -3,9 +3,8 @@ import "./App.css";
 
 import Header from "./components/Header/Header.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
-// import Profile from "./components/Profile/Profile.jsx";
-import Dialogs from "./components/Dialogs/Dialogs.jsx";
-
+import Profile from "./components/Profile/Profile.jsx";
+// import Dialogs from "./components/Dialogs/Dialogs.jsx";
 
 const App = () => {
   return (
@@ -14,9 +13,9 @@ const App = () => {
       <Header />
       <Navbar />
       <section className="app-wrapper-content">
-        <Dialogs />
+        {/* <Dialogs /> */}
+        <Profile />
       </section>
-      {/* <Profile /> */}
     </div>
   );
 };

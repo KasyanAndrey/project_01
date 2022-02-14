@@ -17,27 +17,38 @@ const Message = (props) => {
 };
 
 const Dialogs = (props) => {
+  let dialogsData = [
+    { id: 1, name: "Jax" },
+    { id: 2, name: "Mango" },
+    { id: 3, name: "Poli" },
+    { id: 4, name: "Ajax" },
+    { id: 5, name: "Baz" },
+    { id: 6, name: "Congo" },
+  ];
+
+  let messageData = [
+    {
+      id: 1,
+      message:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, minus.",
+    },
+    {
+      id: 2,
+      message:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, ullam nostrum!",
+    },
+  ];
+
   return (
     <div>
       <div className={css.dialogs}>
         <div className={css.dialogsList}>
-          <DialogItem name="Jax" id="1" />
-          <DialogItem name="Mango" id="2" />
-          <DialogItem name="Poli" id="3" />
-          <DialogItem name="Ajax" id="4" />
-          <DialogItem name="Baz" id="5" />
-          <DialogItem name="Congo" id="6" />
+          <DialogItem name={dialogsData[0].name} id={dialogsData[0].id} />
+          <DialogItem name={dialogsData[1].name} id={dialogsData[1].id} />
         </div>
         <div className={css.messagesList}>
-          <Message
-            message="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
-            repellat error reprehenderit nam consequuntur doloremque."
-          />
-          <Message message="Lorem ipsum dolor sit amet consectetur." />
-          <Message
-            message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            animi!"
-          />
+          <Message message={messageData[0].message} id={messageData[0].id} />
+          <Message message={messageData[1].message} id={messageData[1].id} />
         </div>
       </div>
     </div>

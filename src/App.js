@@ -15,7 +15,7 @@ const App = (props) => {
     <div>
       <BrowserRouter>
         <div className="app-wrapper">
-          next 25
+          next 27
           <Header />
           <Navbar />
           <section className="app-wrapper-content">

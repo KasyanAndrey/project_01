@@ -1,0 +1,8 @@
+.contentWrapper {
+    grid-area: c;
+    padding: 10px 16px;
+    margin-right: 16px;
+    border-radius: 8px;
+    background-color: transparent;
+    /* box-shadow: 5px 10px 20px rgba(10, 10, 10, 0.2); */
+  }

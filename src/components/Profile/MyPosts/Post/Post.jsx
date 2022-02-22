@@ -1,11 +1,11 @@
 import React from "react";
 import css from "./Post.module.css";
-import imgAvatar from "../../../../assets/img/default_avatar.png";
+import AvatarImg from '../../../AvatarImg/AvatarImg.jsx'
 
 const Post = (props) => {
   return (
     <div className={css.post}>
-      <img src={imgAvatar} alt="user avatar"></img>
+      <AvatarImg />
       <p>{props.message}</p>
       <div className={css.like}>Like: {props.liksCount}</div>
     </div>

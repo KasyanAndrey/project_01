@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import AvatarImg from '../../AvatarImg/AvatarImg.jsx'
 import css from "./DialogItem.module.css";
 
 const DialogItem = (props) => {
@@ -7,6 +8,7 @@ const DialogItem = (props) => {
 
   return (
     <div className={`${css.activeLink} ${css.dialog}`}>
+      <AvatarImg />
       <NavLink to={path}>{props.name}</NavLink>
     </div>
   );

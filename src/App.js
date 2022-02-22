@@ -12,26 +12,22 @@ import Music from "./components/Music/Music.jsx";
 import Settings from "./components/Settings/Settings.jsx";
 
 const App = (props) => {
-  debugger;
-
   return (
     <div>
       <BrowserRouter>
         <Container>
-          next 28
+          next 30
           <Header />
           <Navbar />
           <Wrapper>
             <Routes>
               <Route
                 path="/profile"
-                element={<Profile posts={props.posts} />}
+                element={<Profile state={props.state.profilePage} />}
               />
               <Route
                 path="/dialogs"
-                element={
-                  <Dialogs dialogs={props.dialogs} messages={props.messages} />
-                }
+                element={<Dialogs state={props.state.dialogsPage} />}
               />
               <Route path="/news" element={<News />} />
               <Route path="/music" element={<Music />} />

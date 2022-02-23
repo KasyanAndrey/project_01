@@ -1,3 +1,5 @@
+import { renderEntireTree } from "../render.js";
+
 let state = {
   profilePage: {
     posts: [
@@ -5,13 +7,13 @@ let state = {
         id: 1,
         message:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, minus.",
-        liksCount: 12,
+        likesCount: 12,
       },
       {
         id: 2,
         message:
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, ullam nostrum!",
-        liksCount: 21,
+        likesCount: 21,
       },
     ],
   },
@@ -37,6 +39,17 @@ let state = {
       { id: 6, name: "Congo" },
     ],
   },
+};
+
+export const addPost = (postMessage) => {
+  let newPost = {
+    id: 3,
+    message: postMessage,
+    likesCount: 0,
+  };
+
+  state.profilePage.posts.push(newPost);
+  renderEntireTree(state);
 };
 
 export default state;

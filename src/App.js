@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import Container from "./components/Container/Container.jsx";
 import Wrapper from "./components/Wrapper/Wrapper.jsx";
@@ -14,28 +14,26 @@ import Settings from "./components/Settings/Settings.jsx";
 const App = (props) => {
   return (
     <div>
-      <BrowserRouter>
-        <Container>
-          next 30
-          <Header />
-          <Navbar />
-          <Wrapper>
-            <Routes>
-              <Route
-                path="/profile"
-                element={<Profile state={props.state.profilePage} />}
-              />
-              <Route
-                path="/dialogs"
-                element={<Dialogs state={props.state.dialogsPage} />}
-              />
-              <Route path="/news" element={<News />} />
-              <Route path="/music" element={<Music />} />
-              <Route path="/settings" element={<Settings />} />
-            </Routes>
-          </Wrapper>
-        </Container>
-      </BrowserRouter>
+      <Container>
+        next 34
+        <Header />
+        <Navbar />
+        <Wrapper>
+          <Routes>
+            <Route
+              path="/profile"
+              element={<Profile state={props.state.profilePage} addPost={props.addPost}/>}
+            />
+            <Route
+              path="/dialogs"
+              element={<Dialogs state={props.state.dialogsPage} />}
+            />
+            <Route path="/news" element={<News />} />
+            <Route path="/music" element={<Music />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
+        </Wrapper>
+      </Container>
     </div>
   );
 };

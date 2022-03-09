@@ -16,6 +16,7 @@ let state = {
         likesCount: 21,
       },
     ],
+    newPostText: 'It-kamasutra.com',
   },
   dialogsPage: {
     messages: [

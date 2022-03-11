@@ -31,6 +31,7 @@ let state = {
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, ullam nostrum!",
       },
     ],
+    newMessageText: "Please, write...",
     dialogs: [
       { id: 1, name: "Jax" },
       { id: 2, name: "Mango" },
@@ -41,8 +42,6 @@ let state = {
     ],
   },
 };
-
-window.state = state;
 
 export const addPost = () => {
   let newPost = {
@@ -58,6 +57,22 @@ export const addPost = () => {
 
 export const updateNewPostText = (newText) => {
   state.profilePage.newPostText = newText;
+  renderEntireTree(state);
+};
+
+export const addMessage = () => {
+  let newMessage = {
+    id: 3,
+    message: state.dialogsPage.newMessageText,
+  };
+
+  state.dialogsPage.messages.push(newMessage);
+  state.dialogsPage.newMessageText = "";
+  renderEntireTree(state);
+};
+
+export const updateNewMessageText = (newText) => {
+  state.dialogsPage.newMessageText = newText;
   renderEntireTree(state);
 };
 

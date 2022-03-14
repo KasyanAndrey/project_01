@@ -15,18 +15,30 @@ const App = (props) => {
   return (
     <div>
       <Container>
-        next 34
+        next 38
         <Header />
         <Navbar />
         <Wrapper>
           <Routes>
             <Route
               path="/profile"
-              element={<Profile profilePage={props.state.profilePage} addPost={props.addPost} updateNewPostText={props.updateNewPostText}/>}
+              element={
+                <Profile
+                  profilePage={props.state.profilePage}
+                  addPost={props.addPost}
+                  updateNewPostText={props.updateNewPostText}
+                />
+              }
             />
             <Route
               path="/dialogs"
-              element={<Dialogs dialogsPage={props.state.dialogsPage} addMessage={props.addMessage} updateNewMessageText={props.updateNewMessageText}/>}
+              element={
+                <Dialogs
+                  dialogsPage={props.state.dialogsPage}
+                  addMessage={props.addMessage}
+                  updateNewMessageText={props.updateNewMessageText}
+                />
+              }
             />
             <Route path="/news" element={<News />} />
             <Route path="/music" element={<Music />} />

@@ -10,14 +10,14 @@ const MyPosts = (props) => {
   let newPostElement = React.createRef();
 
   let addPost = () => {
-        props.addPost();
+    props.dispatch({ type: "ADD-POST" });
   };
 
   let onPostChange = () => {
     let text = newPostElement.current.value;
-    props.updateNewPostText(text);
+    props.dispatch({ type: "UPDATE-NEW-MESSAGE-TEXT", newText: text });
   };
-  
+
   return (
     <section className={css.container}>
       <h3>My posts</h3>

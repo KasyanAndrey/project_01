@@ -81,22 +81,6 @@ let store = {
       this._callSubscriber(this._state);
     }
   },
-
-  // addMessage() {
-  //   let newMessage = {
-  //     id: 3,
-  //     message: this._state.dialogsPage.newMessageText,
-  //   };
-
-  //   this._state.dialogsPage.messages.push(newMessage);
-  //   this._state.dialogsPage.newMessageText = "";
-  //   this._callSubscriber(this._state);
-  // },
-
-  // updateNewMessageText(newText) {
-  //   this._state.dialogsPage.newMessageText = newText;
-  //   this._callSubscriber(this._state);
-  // },
 };
 
 export default store;
